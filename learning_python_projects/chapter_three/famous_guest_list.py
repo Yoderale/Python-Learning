@@ -84,8 +84,9 @@ print(f'Unfortunately, for you {removed_guest.title()}, there is no longer enoug
 
 print(f'Fortunately for {famous_guest_list[0].title()}, there IS room for you at my dinner party still!')
 print(f'Fortunately for {famous_guest_list[1].title()}, there IS room for you at my dinner party still!')
-
+print(f'This is how many guests are invited to my party {len(famous_guest_list)}.')
 del famous_guest_list[1]
 del famous_guest_list[0]
 
 print(famous_guest_list)
+print(len(famous_guest_list))
