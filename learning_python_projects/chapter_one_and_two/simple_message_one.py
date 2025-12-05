@@ -1,2 +1,2 @@
-message = "I have a tampon penis!"
+message = " You have a huge heart!"
 print(message)
