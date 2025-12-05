@@ -1,0 +1,56 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+.env
+.venv
+env/
+venv/
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.manifest
+*.spec
+pip-wheel-metadata/
+*.sqlite3
+
+# === Sublime Text ===
+*.sublime-workspace
+*.sublime-project
+# Prevent temporary/backup files
+*.tmp
+*.bak
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# === Logs & caches ===
+*.log
+*.cache
+.cache/
+logs/
+tmp/
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints/
+
+# === VSCode (if ever used) ===
+.vscode/
+
+# === Other ===
+.idea/
