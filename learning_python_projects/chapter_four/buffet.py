@@ -5,6 +5,7 @@ buffet_foods = (
     )
 for food in (buffet_foods):
     print(f'The buffet offers: {food.title()}')
+
 buffet_foods = (
     'ice cream', 'porridge', 'fried chicken',
     'steak', 'mashed potatoes'
