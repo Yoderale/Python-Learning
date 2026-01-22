@@ -9,24 +9,22 @@ def make_album(name, title, num_songs = None):
         'title': title
         }
     if num_songs:
-        album = f"{name} {title}: {num_songs}" 
-    else:
-        album = f"{name} {title}"
-    return album.title()
-    
+        album['num_songs'] = num_songs
+    return album
+    # originally this was converting the dictionary to an f stringp
+    # added an if statement with a break to account for either input contains 'quit'
 
 while True:
-    response = input("Type 'quit' at any time to exit ")
-    if response.lower() == 'quit':
-        add_album_bool = False
-    else: 
-        album_reponse = input(f"What is the artist's name? ")
-        name = album_reponse
-        title_response  = input(f"What is the title of the album? ")
-        title = title_response
-    album = make_album(name, title)
-print(album)
-
+    print('Type quit at any time to exit the program')
+    album_reponse = input(f"What is the artist's name? ")
+    if album_reponse.lower() == 'quit':
+        break
+    title_response  = input(f"What is the title of the album? ")
+    if title_response.lower() == 'quit':
+        break
+    album = make_album(album_reponse, title_response)
+    print(album)
+print('Thank you for your response!')
 
 
 
